@@ -1,7 +1,7 @@
 <template>
 <div>
   <UserSearchForm/>
-  <UserProfile/>
+  <UserProfile :user="user"/>
 </div>
 </template>
 
@@ -13,6 +13,13 @@ export default {
   components: {
     UserSearchForm,
     UserProfile
+  },
+  data () {
+    return {
+      user: {
+        name: ''
+      }
+    }
   }
 }
 </script>
