@@ -9,9 +9,8 @@
 
 <script>
 import { mapState } from 'vuex'
-import UserSearchForm from './UserSearchForm'
-import UserProfile from './UserProfile'
-import user from "../../tests/unit/fixtures/user";
+import UserSearchForm from '@/components/UserSearchForm'
+import UserProfile from '@/components/UserProfile'
 export default {
   name: 'UserView',
   components: {
@@ -19,7 +18,7 @@ export default {
     UserProfile
   },
   methods: {
-    searchUser(username) {
+    searchUser (username) {
       this.$store.dispatch('SEARCH_USER', { username })
     }
   },
