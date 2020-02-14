@@ -20,7 +20,7 @@ describe('User search form', () => {
     expect(button().exists()).toBe(true)
   })
   it('call submit event', () => {
-    const expectUser = 'kuroski'
+    const expectUser = 'begprod'
     const { wrapper, input, button } = build()
     input().element.value = expectUser
     input().trigger('input')

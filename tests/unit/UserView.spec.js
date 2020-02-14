@@ -46,7 +46,7 @@ describe('UserView', () => {
     expect(userProfile().vm.user).toBe(state.user)
   })
   it('searches for a user when received "submitted"', () => {
-    const expectedUser = 'kuroski'
+    const expectedUser = 'begprod'
     const { userSearchForm } = build()
     userSearchForm().vm.$emit('submitted', expectedUser)
     expect(actions.SEARCH_USER).toHaveBeenCalled()
