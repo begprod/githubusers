@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="wrapper">
   <UserSearchForm
     @submitted="searchUser"
   />
@@ -29,3 +29,10 @@ export default {
   }
 }
 </script>
+
+<style>
+  .wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+</style>
