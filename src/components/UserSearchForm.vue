@@ -8,7 +8,7 @@
 <script>
 export default {
   name: 'UserSearchForm',
-  data() {
+  data () {
     return {
       username: ''
     }
